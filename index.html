@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Агентство</title>
+  <style>
+    :root {
+      --main-color: #4f46e5;
+      --accent-color: #6366f1;
+      --bg-color: #f9fafb;
+      --text-color: #111827;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--main-color), var(--accent-color));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--main-color);
+    }
+
+    .services, .cases {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(33.333% - 1rem);
+      min-width: 260px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .services, .cases {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI АГЕНТСТВО</h1>
+    <p>Инновационные решения на базе ИИ для вашего бизнеса</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>О нас</h2>
+      <p>
+        Мы — команда экспертов по искусственному интеллекту, создающая решения, которые помогают бизнесам автоматизировать процессы, анализировать данные и повышать эффективность.
+      </p>
+    </section>
+
+    <section>
+      <h2>Наши услуги</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Чат-боты</h3>
+          <p>Разработка умных чат-ботов на базе GPT и других LLM.</p>
+        </div>
+        <div class="card">
+          <h3>Аналитика данных</h3>
+          <p>Модели предсказания, кластеризация клиентов, обработка Big Data.</p>
+        </div>
+        <div class="card">
+          <h3>Автоматизация</h3>
+          <p>Оптимизация рутинных бизнес-процессов с помощью ИИ.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Кейсы</h2>
+      <div class="cases">
+        <div class="card">
+          <h3>eCommerce GPT</h3>
+          <p>Внедрили GPT-ассистента в интернет-магазин — рост продаж на 27%.</p>
+        </div>
+        <div class="card">
+          <h3>ИИ для HR</h3>
+          <p>Разработка рекрутингового фильтра — снижение затрат на найм на 40%.</p>
+        </div>
+        <div class="card">
+          <h3>Финансовый ИИ</h3>
+          <p>Модель прогнозирования доходов — точность 92% на реальных данных.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>📧 hello@aiagency.ru</p>
+      <p>📞 +998 930455919</p>
+      <p>📍 xz</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AI Агентство. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
